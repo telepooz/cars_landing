@@ -12,12 +12,40 @@ body {
   font-size: 15px;
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.btn{
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#DB2512;
+    min-width: 200px;
+    padding: 0 15px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s ease;
+    border-radius: 7px;
+}
+.btn:hover{
+    background-color: rgb(100, 14, 14);
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
 }
+/*шапка начало*/
 .header {
-  background-color: black;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
 }
 
 .header_wraper {
@@ -86,6 +114,54 @@ body {
 .header_lng-link.active {
   color: #fff;
 }
-/* закончил шапку*/
+/* шапка конец*/
+
+/*начало интро*/
+
+.intro{
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    background: url("../img/logo2.jpg") no-repeat;
+    background-size:  cover;    
+}
+.intro:after{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .2;
+    content: "";
+
+}
+
+.intro_content{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+    
+
+
+.intro_block{
+
+}
+.intro_title{
+    max-width: 790px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff ;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+   
+
+/*конец интро*/
 
 
