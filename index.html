@@ -8,7 +8,7 @@
     <title>Car repair</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="media.css" />
-
+    <link rel="stylesheet" href="burger.css" />
   </head>
   <body>
     <header class="header">
@@ -21,6 +21,10 @@
           </div>
           <!--/header_block-->
           <nav class="nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
             <a href="#" class="nav_link active">Главная</a>
             <a href="#" class="nav_link">Наши сервисы</a>
             <a href="#" class="nav_link">О нас</a>
@@ -204,7 +208,7 @@
 
     <section class="contacts">
       <div class="container">
-        <h2 class="block_title text_white">Contacts us</h2>
+        <h2 class="block_title text_white">Свяжитесь с нами!</h2>
         <form class="contacts_form" action="">
           <div class="form_row">
             <div class="form_group">
@@ -240,16 +244,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer_wrapper">
-          <p class="copyright">© 2021 Auto theme by Frontend Tricks</p>
+          <p class="copyright">2022 Лендинг автосервиса by <span style="color: red; font-weight: bold;">telepooz</span></p>
           <div class="footer_soc">
-            <a href="" class="footer_soc-link">
-              <img src="img/in.svg" alt="" />
+            <a href="https://vk.com/vasiliypavlo" target="_blank" class="footer_soc-link">
+              <img src="img/vk.svg" alt="" />
             </a>
-            <a href="" class="footer_soc-link">
-              <img src="img/f.svg" alt="" />
-            </a>
-            <a href="" class="footer_soc-link">
-              <img src="img/inst.svg" alt="" />
+            <a href="https://github.com/telepooz" target="_blank" class="footer_soc-link">
+              <img src="img/github.svg" alt="" />
             </a>
           </div>
         </div>
